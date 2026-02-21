@@ -1,11 +1,74 @@
-# SWE INTERVIEW TEST 
-THIS IS TO TEST YOUR SKILLS TO MEET OUR APP DEVELOPMENT REQUIREMENTS
 
-1. Clone this repo to your local machine.
-2. Read `Assignment Requirements` carefully and follow it.
-4. Please commit your entire code to `your own Github repository` 
-5. On your repo, please add step-by-step instructions on how to launch (for both the Backend and Frontend) to the `README.md`
-6. Share your repo link with us via email.
+## How to Launch the App
 
-HAPPY CODING! </br>
-A Round Entertainment
+This project has two parts:
+
+- **Backend (Express API)** → `http://localhost:5000`
+- **Frontend (React App)** → `http://localhost:3000`
+
+You will need **two terminals** (one for backend, one for frontend).
+
+---
+
+## 1) Run the Backend
+
+Open a terminal and run:
+
+```bash
+cd StarterCode/backend
+npm install
+node index.js
+````
+
+You should see:
+
+```bash
+Server is running on port 5000
+```
+
+### Test backend (optional)
+
+Open this URL in your browser:
+
+```txt
+http://localhost:5000/api/products
+```
+
+You should see a JSON list of products.
+
+
+## 2) Run the Frontend
+
+Open a **second terminal** and run:
+
+```bash
+cd StarterCode/frontend
+npm install
+npm start
+```
+
+This should open the app in your browser automatically.
+
+If it does not open automatically, go to:
+
+```txt
+http://localhost:3000
+```
+
+
+## 3) Use the App
+
+* The frontend fetches products from the backend
+* Products are shown as cards
+* Click the delete icon to remove a product
+
+---
+
+## Common Issues / Troubleshooting
+
+### Port already in use
+
+If port `3000` or `5000` is already being used:
+
+* Close other running apps using those ports, **or**
+* Change the port in your code/config and restart
